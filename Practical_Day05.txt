@@ -1,0 +1,145 @@
+{ ~ }  » vi data.csv   
+                                                                         ~
+{ ~ }  » more data.csv                                                                   ~
+ID,Name,Salary,Department
+101,Alice,20,70000,Data Sceince
+102,Bob,25,50000,Engineering
+103,Charlie,25,80000,Data science
+104,David,40,90000,HR
+105,Eve,28,60000,Data Science
+106,Frank,38,75000,HR
+107,Grace,27,72000,Data Science
+108,Hank,32,68000,Engineering
+109,Ivy,29,62000,Data Science
+110,Jack,31,71000,HR
+
+{ ~ }  » less data.csv 
+                                                                  ~
+{ ~ }  » grep "Engineering" data.csv                                                     ~
+102,Bob,25,50000,Engineering
+108,Hank,32,68000,Engineering
+
+{ ~ }  » head data.csv                                                                   ~
+ID,Name,Salary,Department
+101,Alice,20,70000,Data Sceince
+102,Bob,25,50000,Engineering
+103,Charlie,25,80000,Data science
+104,David,40,90000,HR
+105,Eve,28,60000,Data Science
+106,Frank,38,75000,HR
+107,Grace,27,72000,Data Science
+108,Hank,32,68000,Engineering
+109,Ivy,29,62000,Data Science
+
+{ ~ }  » tail data.csv                                                                   ~
+101,Alice,20,70000,Data Sceince
+102,Bob,25,50000,Engineering
+103,Charlie,25,80000,Data science
+104,David,40,90000,HR
+105,Eve,28,60000,Data Science
+106,Frank,38,75000,HR
+107,Grace,27,72000,Data Science
+108,Hank,32,68000,Engineering
+109,Ivy,29,62000,Data Science
+110,Jack,31,71000,HR
+
+{ ~ }  » head -5 data.csv                                                                ~
+ID,Name,Salary,Department
+101,Alice,20,70000,Data Sceince
+102,Bob,25,50000,Engineering
+103,Charlie,25,80000,Data science
+104,David,40,90000,HR
+
+{ ~ }  » tail -3 data.csv                                                                ~
+108,Hank,32,68000,Engineering
+109,Ivy,29,62000,Data Science
+110,Jack,31,71000,HR
+
+
+{ ~ }  » wc -l data.csv                                                                ~ 1
+11 data.csv
+
+                                                                                                                         ~
+{ ~ }  » awk -F, '{print NF ;exit}' data.csv                                           ~ 1
+4
+
+
+{ ~ }  » awk -F ',' '{print NF}' data.csv                                                                                                                                              ~ 1
+4
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+
+{ ~ }  » sort -t ',' -k3,3n data.csv                                                     ~
+ID,Name,Salary,Department
+101,Alice,20,70000,Data Sceince
+102,Bob,25,50000,Engineering
+103,Charlie,25,80000,Data science
+107,Grace,27,72000,Data Science
+105,Eve,28,60000,Data Science
+109,Ivy,29,62000,Data Science
+110,Jack,31,71000,HR
+108,Hank,32,68000,Engineering
+106,Frank,38,75000,HR
+104,David,40,90000,HR
+
+
+{ ~ }  » sort -t ',' -k3 data.csv                                                        ~
+101,Alice,20,70000,Data Sceince
+102,Bob,25,50000,Engineering
+103,Charlie,25,80000,Data science
+107,Grace,27,72000,Data Science
+105,Eve,28,60000,Data Science
+109,Ivy,29,62000,Data Science
+110,Jack,31,71000,HR
+108,Hank,32,68000,Engineering
+106,Frank,38,75000,HR
+104,David,40,90000,HR
+ID,Name,Salary,Department
+
+
+{ ~ }  » sort -t ',' -k4,4 -r data.csv                                                 ~ 2
+ID,Name,Salary,Department
+104,David,40,90000,HR
+103,Charlie,25,80000,Data science
+106,Frank,38,75000,HR
+107,Grace,27,72000,Data Science
+110,Jack,31,71000,HR
+101,Alice,20,70000,Data Sceince
+108,Hank,32,68000,Engineering
+109,Ivy,29,62000,Data Science
+105,Eve,28,60000,Data Science
+102,Bob,25,50000,Engineering
+                                                                 ~ 2
+{ ~ }  » sort -t ',' -k4,4 -n -r data.csv                                              ~ 2
+104,David,40,90000,HR
+103,Charlie,25,80000,Data science
+106,Frank,38,75000,HR
+107,Grace,27,72000,Data Science
+110,Jack,31,71000,HR
+101,Alice,20,70000,Data Sceince
+108,Hank,32,68000,Engineering
+109,Ivy,29,62000,Data Science
+105,Eve,28,60000,Data Science
+102,Bob,25,50000,Engineering
+ID,Name,Salary,Department
+
+{ ~ }  » sort -t ',' -k3,3 -k4,4 -r data.csv                                             ~
+ID,Name,Salary,Department
+104,David,40,90000,HR
+106,Frank,38,75000,HR
+108,Hank,32,68000,Engineering
+110,Jack,31,71000,HR
+109,Ivy,29,62000,Data Science
+105,Eve,28,60000,Data Science
+107,Grace,27,72000,Data Science
+103,Charlie,25,80000,Data science
+102,Bob,25,50000,Engineering
+101,Alice,20,70000,Data Sceince
