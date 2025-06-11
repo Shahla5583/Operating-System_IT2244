@@ -1,4 +1,4 @@
-## ex.c
+## exl.c
 
 
 [2021ict126@fedora ~]$ vi exl.c
@@ -68,7 +68,7 @@ Choose a shape:
 2. Rectangle
 3. Square
 4. Triangle
-5. 
+  
 Enter your choice (1-4): 4
 
 Enter base: 6
