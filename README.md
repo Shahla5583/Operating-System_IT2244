@@ -15,3 +15,13 @@ All three messages are written to the pipe using write().
 A loop is used to read the messages from the pipe using read(), and each message is printed with printf().
 
 Although pipes are usually used between parent and child processes, this code demonstrates basic pipe usage within the same process.
+
+
+## pipe.c
+![image](https://github.com/user-attachments/assets/c3f1fa83-5bb4-4582-b470-d16596a2321d)
+
+## exercise.c
+![image](https://github.com/user-attachments/assets/2e2c381c-46ed-4abe-a8db-1ff24ac43012)
+
+## d20_HW.c
+![image](https://github.com/user-attachments/assets/e22065e2-1cab-4a5e-bf3c-7be30e3eda04)
