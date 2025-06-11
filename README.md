@@ -2,14 +2,19 @@
 
 
 [2021ict126@fedora ~]$ vi exl.c
+
 [2021ict126@fedora ~]$ gcc exl.c -o exl
+
 [2021ict126@fedora ~]$ ./exl
+
 Area Calculation Program
+
 Choose a shape:
 1. Circle
 2. Rectangle
 3. Square
 4. Triangle
+   
 Enter your choice (1-4): 1
 Enter radius: 4
 Area of Circle = 50.27
@@ -20,6 +25,7 @@ Choose a shape:
 2. Rectangle
 3. Square
 4. Triangle
+   
 Enter your choice (1-4): 2
 Enter length: 3
 Enter width: 6
@@ -31,6 +37,7 @@ Choose a shape:
 2. Rectangle
 3. Square
 4. Triangle
+   
 Enter your choice (1-4): 3
 Enter side length: 7
 Area of Square = 49.00
