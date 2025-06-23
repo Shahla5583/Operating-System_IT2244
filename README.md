@@ -5,6 +5,7 @@
 ![image](https://github.com/user-attachments/assets/f20563dc-c2df-42f9-9539-196292dacd3b)
 
 ## Thread Exercise
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/5325a3df-082c-4d0c-b74f-0173e8f40679)
+
 
 
